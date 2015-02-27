@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Phone">
+
+    <TextView
+        android:text="OBD - Smart Phone - Google Glass"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView" />
+
+    <Button
+        android:id="@+id/obd_on"
+        android:text="OBD"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+        android:id="@+id/glass_on"
+        android:text="Google Glass"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/obd_on"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:id="@+id/obd"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/obd_on"
+        android:layout_alignLeft="@+id/obd_on"
+        android:layout_alignStart="@+id/obd_on"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/glass"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/obd"
+        android:layout_alignLeft="@+id/obd"
+        android:layout_alignStart="@+id/obd"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:id="@+id/speed_limit_15"
+        android:text="Limit Speed 15mph"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/glass"
+        android:layout_alignLeft="@+id/obd_on"
+        android:layout_alignStart="@+id/obd_on"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:id="@+id/speed_limit_35"
+        android:text="Limit Speed 35mph"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/speed_limit_45"
+        android:layout_alignRight="@+id/end"
+        android:layout_alignEnd="@+id/end" />
+    
+    <Button
+        android:id="@+id/speed_limit_45"
+        android:text="Limit Speed 45mph"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/speed_limit_15"
+        android:layout_alignLeft="@+id/obd_on"
+        android:layout_alignStart="@+id/obd_on"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:id="@+id/speed_limit_65"
+        android:text="Limit Speed 65mph"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/speed_limit_45"
+        android:layout_alignLeft="@+id/speed_limit_35"
+        android:layout_alignStart="@+id/speed_limit_35" />
+
+    <Button
+        android:id="@+id/end"
+        android:text="End"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/glass_on"
+        android:layout_alignRight="@+id/glass_on"
+        android:layout_alignEnd="@+id/glass_on"
+        android:layout_marginTop="60dp" />
+
+</RelativeLayout>
